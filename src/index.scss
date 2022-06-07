@@ -1,54 +1,54 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  #root {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  form {
-    width: 300px;
-    background-color: rgba(17, 255, 0, 0.283);
-    padding: 16px;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-
-  }
-
-.header-password {
-    text-transform: uppercase;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 100%;
-      margin-bottom: 8px;
-      font-weight: 700;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-.green {
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.passords-text {
+  width: 300px;  
+}
+
+.passords-form { 
+  padding: 20px;  
+  background-color: rgba(17, 255, 0, 0.283);
+}
+
+.passords-title{
+  height: 40px;
+  border-radius: 20px 20px 0px 0px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgba(0, 255, 255, 0.523);
+  font-weight: 700;
+  padding: 10px;
+}
+.passords-btn {
+  color: rgb(220, 36, 36);
+  border-radius: 8px;
+  text-transform: uppercase;
+  padding: 8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.password{
+  margin: 8px;
+  display: flex;
+
+  &__green {
     color: green;
-}
-
-.red {
-    color: red;
-}
-
-.btn {
-    height: 48px;
-    color: rgb(220, 36, 36);
-    border-radius: 8px;
-    width: 120px;
-    outline: none;
-    border: none;
-    text-transform: uppercase;
-    padding: 8px;
-    cursor: pointer;
   }
+  &__red {
+    color: red;
+  }
+}

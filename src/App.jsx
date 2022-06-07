@@ -13,20 +13,20 @@ const App = () => {
   const amountPassValid = pass.filter(el => el.valid).length;
   return (
     <>
-      <div className="header-password">password valid - {amountPassValid}</div>
-      <div className="password">
-        <form onSubmit={onSubmit}>
-          <textarea name="" id="" cols="30" rows="10" onChange={handleChange}></textarea>
-          <button className="btn" type="submit">
-            Проверка
+      <div className="passords-text">
+        <div className="passords-title">password valid - {amountPassValid}</div>
+        <form className="passords-form" onSubmit={onSubmit}>
+          <textarea cols="30" rows="10" onChange={handleChange}></textarea>
+          <button className="passords-btn" type="submit">
+            password validation
           </button>
         </form>
-        <ul>
-          {pass.map(p => (
-            <TruePass key={p.password} {...p} />
-          ))}
-        </ul>
       </div>
+      <ol>
+        {pass.map(p => (
+          <TruePass key={p.password} {...p} />
+        ))}
+      </ol>
     </>
   );
 };
