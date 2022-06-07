@@ -1,7 +1,7 @@
 # cruxlabtest
 
 ### [Site link]
-<a href="https://frosty-thompson-fea016.netlify.app/"># PASS_valid</a>
+<a href="https://fantastic-madeleine-7e7e64.netlify.app")># PASS_valid</a>
 ## Getting Started and Create
 
 development:
