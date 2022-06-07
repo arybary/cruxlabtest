@@ -17,7 +17,7 @@ const App = () => {
         <div className="passords-title">password valid - {amountPassValid}</div>
         <form className="passords-form" onSubmit={onSubmit}>
           <textarea cols="30" rows="10" onChange={handleChange}></textarea>
-          <button className="passords-btn" type="submit">
+          <button className="passords-btn" type="submit" disabled={!text}>
             password validation
           </button>
         </form>
