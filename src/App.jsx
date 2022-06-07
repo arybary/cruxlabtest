@@ -8,7 +8,10 @@ const App = () => {
   const handleChange = e => setText(e.target.value);
   const onSubmit = e => {
     e.preventDefault();
-    setPass(validPass(text));
+
+    validPass(text)
+      .then(res => setPass(res))
+      .catch(er => alert(`text password invalid becose ${er}`));
   };
   const amountPassValid = pass.filter(el => el.valid).length;
   return (

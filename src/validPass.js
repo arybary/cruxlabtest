@@ -1,4 +1,4 @@
-export default function validPass(textPassword) {
+export default async function validPass(textPassword) {
   const passFormatOfValid = textPassword.split('\n').map(el => {
     const strPass = el.split(' ');
     const [minSymbolOfPass, maxSymbolOfPass] = strPass[1].slice(0, -1).split('-');
