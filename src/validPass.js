@@ -12,6 +12,5 @@ export default function validPass(textPassword) {
     };
   });
 
-  console.log(passFormatOfValid);
   return passFormatOfValid;
 }
